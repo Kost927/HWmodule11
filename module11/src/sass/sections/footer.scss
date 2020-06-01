@@ -1,0 +1,46 @@
+.footer {
+  border-top: 1px solid $fourth-font-color;
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.informaton {
+  font-size: 14px;
+  font-weight: 400;
+  color: $second-font-color;
+  line-height: 1.2;
+
+  &-link {
+    color: $second-color;
+    cursor: pointer;
+  }
+}
+
+.email-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-form {
+  font-size: 15px;
+  line-height: 24px;
+  font-style: italic;
+  font-family: $second-font;
+  height: 40px;
+  width: 240px;
+  padding-left: 15px;
+  outline: none;
+
+  &::placeholder {
+    color: #cccccc;
+  }
+}

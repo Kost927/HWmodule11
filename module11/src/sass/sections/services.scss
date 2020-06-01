@@ -1,0 +1,112 @@
+.services {
+  padding: 52px 0 100px;
+
+  &-team-title {
+    text-align: center;
+    margin-bottom: 65px;
+    &__first-part {
+      display: block;
+      font-size: 24px;
+      font-family: $third-font;
+      color: $second-font-color;
+      line-height: 1.2;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    &__second-part {
+      display: block;
+      font-size: 30px;
+      color: $second-font-color;
+      text-transform: uppercase;
+      color: $second-font-color;
+      line-height: 1.2;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    &::after {
+      display: block;
+      content: '';
+      background-color: $second-color;
+      width: 60px;
+      height: 3px;
+      margin: 0 auto;
+    }
+  }
+
+  &-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    &__item {
+      background-repeat: no-repeat;
+      background-position: 30px 0;
+      width: 380px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+
+      &--clock {
+        background-image: url(../images/iconspic/clock.svg);
+      }
+
+      &--graph {
+        background-image: url(../images/iconspic/graph.svg);
+      }
+
+      &--computer {
+        background-image: url(../images/iconspic/computer.svg);
+      }
+
+      &--book {
+        background-image: url(../images/iconspic/book.svg);
+      }
+
+      &--house {
+        background-image: url(../images/iconspic/house.svg);
+      }
+
+      &--image {
+        background-image: url(../images/iconspic//image.svg);
+      }
+
+      &--image {
+        background-image: url(../images/iconspic//image.svg);
+      }
+
+      &:not(:nth-child(n + 4)) {
+        margin-bottom: 100px;
+      }
+
+      &__wrapper {
+        padding-left: 90px;
+      }
+
+      &__title {
+        font-size: 14px;
+        color: $second-font-color;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: left;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      &__description {
+        font-size: 15px;
+        font-family: $second-font;
+        color: $fourth-font-color;
+        line-height: 1.6;
+        text-align: left;
+        font-weight: 400;
+      }
+    }
+  }
+}
