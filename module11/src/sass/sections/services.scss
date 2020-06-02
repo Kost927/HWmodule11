@@ -6,22 +6,18 @@
     margin-bottom: 65px;
     &__first-part {
       display: block;
-      font-size: 24px;
+      @include font(24px, 400, 1.2);
       font-family: $third-font;
       color: $second-font-color;
-      line-height: 1.2;
-      font-weight: 400;
       margin-bottom: 20px;
     }
 
     &__second-part {
       display: block;
-      font-size: 30px;
+      @include font(30px, 700, 1.2);
       color: $second-font-color;
       text-transform: uppercase;
       color: $second-font-color;
-      line-height: 1.2;
-      font-weight: 700;
       margin-bottom: 40px;
     }
 
@@ -90,22 +86,18 @@
       }
 
       &__title {
-        font-size: 14px;
         color: $second-font-color;
         text-transform: uppercase;
-        line-height: 1.2;
+        @include font(14px, 400, 1.2);
         text-align: left;
-        font-weight: 400;
         margin-bottom: 20px;
       }
 
       &__description {
-        font-size: 15px;
+        @include font(15px, 400, 1.6);
         font-family: $second-font;
         color: $fourth-font-color;
-        line-height: 1.6;
         text-align: left;
-        font-weight: 400;
       }
     }
   }

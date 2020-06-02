@@ -13,10 +13,8 @@
 }
 
 .informaton {
-  font-size: 14px;
-  font-weight: 400;
+  @include font(14px, 400, 1.2);
   color: $second-font-color;
-  line-height: 1.2;
 
   &-link {
     color: $second-color;
@@ -43,4 +41,16 @@
   &::placeholder {
     color: #cccccc;
   }
+}
+
+.button-subscribe {
+  border: 1px solid $third-color;
+  background-color: $third-color;
+  width: 150px;
+  font-family: $main-font;
+  @include font(14px, 400, 1.2);
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  outline: none;
+  cursor: pointer;
 }

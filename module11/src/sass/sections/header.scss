@@ -1,6 +1,5 @@
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  @extend %container;
 }
 
 .header {
@@ -24,9 +23,7 @@
 
 .logotype {
   color: $main-font-color;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 1.2;
+  @include font(30px, 700, 1.2);
 }
 
 .menu-list__wrapper {
@@ -71,9 +68,7 @@
   }
   &__item-link {
     color: $main-font-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
+    @include font(14px, 400, 1.2);
     text-transform: uppercase;
     -webkit-transition: all 200ms linear;
     -o-transition: all 200ms linear;
